@@ -1,0 +1,36 @@
+#!/bin/bash
+
+mkdir datos
+
+cd datos
+
+wget -i http://www.pccomponentes.com/leotec_l_pad_meteor_dcx_9__8gb.html >> datos
+
+cat pagina_opiniones_usuario.php\?idc\=* >> solucion.txt
+
+DIRECTORIOANTES=$(pwd)
+
+cd ..
+
+DIRECTORIODESPUES=$(pwd)
+
+cp $DIRECTORIOANTES/solucion.txt $DIRECTORIODESPUES
+
+lex practica3.l
+
+g++ lex.yy.c -o prog -lfl
+
+./prog datos/solucion.txt >> final.txt
+
+lex practica3a.l
+
+g++ lex.yy.c -o prog1 -lfl
+
+./prog1 final.txt >> final2.txt
+
+
+
+
+echo "Finalizado"
+
+echo "Abrir final2.txt"
