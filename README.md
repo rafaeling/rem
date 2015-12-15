@@ -1,6 +1,6 @@
 # rem
 Lexical analyzer generator which use regulars expressions mining used to extract opinions about items in pc componentes.
-[Spanish Version](../memoria.pdf)
+[Spanish Version](memoria.pdf)
 # script
 #### Con el comando wget descargamos la web en la que aparece el producto, si queremos
 aplicarlo sobre otro producto debemos cambiar la url por la del producto.
