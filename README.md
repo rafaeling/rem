@@ -1,5 +1,5 @@
 # rem
-Lexical analyzer generator which use regulars expressions mining used to extract opinions about items in pc componentes.
+Lexical analyzer generator which use minig regulars expressions to extract products opinion in pc componentes.
 [Spanish Version](memoria.pdf)
 # script
 #### Con el comando wget descargamos la web en la que aparece el producto, si queremos
